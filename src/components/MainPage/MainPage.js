@@ -5,6 +5,17 @@ import { useEffect } from 'react';
 
 export const MainPage = () => {
     const navigate = useNavigate();
+    //      useEffect(()=> {
+//         fetch('http://localhost:3333/api/candidates',{
+//   mode: 'cors',
+//   headers: {
+//     'Access-Control-Allow-Origin':'*'
+//   }
+// }).then(data=>data.json())
+//         .then(res => {
+//             console.log(res);
+//         })
+//     },[])
     return (
         <div className='dummy'>
             <h1 className='title' onClick={() => navigate('/')}> Hiring agency HAREM </h1>
