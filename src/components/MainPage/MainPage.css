@@ -1,0 +1,10 @@
+.dummy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+
+.title {
+    cursor: pointer;
+}
