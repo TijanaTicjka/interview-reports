@@ -1,0 +1,39 @@
+.search-box {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+    height: 15%;
+    padding-top: 1em;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    height: 2em;
+}
+
+.input input {
+    border-radius: 1.3em;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    padding-left: 30px;
+    background-color: rgba(225, 211, 214, 0.035);
+}
+
+.input input:focus {
+    _background-color: rgb(222, 202, 151);
+    background-color: rgb(255, 255, 255);
+    outline-color: rgb(255, 255, 255, 1);
+    outline-offset: 0.1em;
+    color: gray;
+}
+
+.input .icon {
+    color: rgb(209, 211, 214);
+    z-index: 1;
+    position: relative;
+    margin-top: 8px;
+    margin-right: -25px;
+
+}

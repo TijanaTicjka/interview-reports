@@ -1,15 +1,14 @@
-import './Candidate-reports-page.css';
+import './CandidatePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
-
-
+import { useState } from 'react';
 
 export const CandidateReports = () => {
     return (
         <div className='container'>
             <div className='info-box'>
-            <div className='image'>
+            <div className='image' >
                 <img src='https://variety.com/wp-content/uploads/2021/04/Avatar.jpg?w=681&h=383&crop=1&resize=681%2C383'></img>
             </div>
             <div className='info'>
@@ -29,7 +28,7 @@ export const CandidateReports = () => {
             <table className='table'>
                 <tr className='row-first'>
                     <td>
-                        <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }}/> Company
+                        <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Company
                     </td>
                     <td>
                          <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }}/>Interview date
@@ -97,6 +96,7 @@ export const CandidateReports = () => {
                 </tr>
             </table>
         </div>
+        
 
     )
     
