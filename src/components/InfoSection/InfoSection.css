@@ -3,10 +3,13 @@
     width: 200px;
     
 }
+
 .image {
-    
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+h2 {
+    padding-bottom: 50px;
 }

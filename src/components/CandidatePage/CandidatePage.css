@@ -37,7 +37,6 @@
 }
 .row-first{
     background-color: gray;
-
 }
 .row-third{
     background-color: lightgray;
@@ -48,7 +47,6 @@
 td{
     border: 1px solid black;
     padding: 0.5em;
-   
    
 }
 

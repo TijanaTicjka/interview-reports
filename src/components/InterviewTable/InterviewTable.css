@@ -1,0 +1,23 @@
+.table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+th {
+    border: 1px solid black;
+    padding: 0.5em;
+ }
