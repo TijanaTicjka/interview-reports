@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { CandidateCard } from './CandidateCard/CandidateCard';
 
+
 export const Candidates = () => {
     const [candidates, setCandidates]= useState([]);
     
