@@ -27,8 +27,8 @@ h2 {
     word-wrap: break-word;
     overflow-wrap: break-word;
     /* overflow:hidden;
-    text-overflow:ellipsis; */
-}
+    text-overflow:ellipsis;*/
+} 
 
 .title-p {
     font-size: 22px;

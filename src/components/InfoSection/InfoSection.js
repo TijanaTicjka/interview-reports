@@ -14,7 +14,7 @@ export const InfoSection = ({ candidate }) => {
     // }, [params.id])
     if (!candidate) return null;
     
-    const formattedBirthday = new Date(candidate.birthday).toLocaleDateString('ru-RU');
+    const formattedBirthday = new Date(candidate.birthday).toLocaleDateString('ru-RU') + ".";
     return (
         <div className='info-box gradient-border'>
             <div className='image'>

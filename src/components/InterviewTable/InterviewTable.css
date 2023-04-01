@@ -45,10 +45,14 @@ th {
 
 .column-first {
     width: 30%;
+    border: 1px solid black;
+    border-collapse: collapse;
  }
 
 .column-second {
     width: 42%;
+    border: 1px solid black;
+    border-collapse: collapse;
  }
 
 .column-third {

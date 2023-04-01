@@ -51,7 +51,7 @@ return (
                 {reports.map(report => (
                     <tr key={report.candidateId}>
                         <td>{report.companyName}</td>
-                        <td>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}</td>
+                        <td>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}.</td>
                         <td>{report.status}</td>
                         <td style={{ width: '5%', textAlign: 'center'}}><FontAwesomeIcon icon={faEye} size="lg" /></td>
                     </tr>
