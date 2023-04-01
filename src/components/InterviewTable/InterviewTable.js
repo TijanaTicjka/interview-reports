@@ -2,11 +2,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import './InterviewTable.css';
+import { Modal } from '../Modal/Modal';
+import { useState } from 'react';
 
 export const InterviewTable = ({ reports }) => {
     console.log(reports);
+    const [modal, setModal] = useState(false);
+    const [report, setReport] = useState(null);
+    console.log(report)
+
+    const openModal = (report) => {
+        setReport(report)
+        setModal(true)
+    }
     return (
         <div className='gradient-border-table'>
+            <Modal modal={modal} setModal={setModal} report= {report}/>
             <table className='interview-table'>
                 <thead className='row-first'>
                     <tr>
@@ -27,7 +38,7 @@ export const InterviewTable = ({ reports }) => {
                         <td>{report.companyName}</td>
                         <td>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}.</td>
                         <td>{report.status}</td>
-                        <td style={{ width: '5%', textAlign: 'center'}}><FontAwesomeIcon icon={faEye} size="lg" /></td>
+                        <td style={{ width: '5%', textAlign: 'center'}}><FontAwesomeIcon icon={faEye} size="lg" onClick={() => openModal(report)}/></td>
                     </tr>
                 ))}
             </tbody>
