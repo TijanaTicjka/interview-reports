@@ -9,6 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path={'/'} element={<Layout />} >
+        <Route path={'/'} element={<Candidates/>}/>
         <Route path={'/candidates'} element={<Candidates/>}/>
         <Route path={'/candidates/:id'} element={<SingleCandidate/>} />
       </Route>
