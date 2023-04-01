@@ -10,18 +10,20 @@ export const Candidates = () => {
     const [candidates, setCandidates]= useState([]);
    
 
-    useEffect(() => {
-        fetch('http://localhost:3333/api/candidates')
-        .then(data => data.json())
-        .then(res => 
-            console.log(res))
-        
-    },[]
-    )
+     useEffect(()=> {
+        fetch('http://localhost:3333/api/candidates',{
+              mode: 'cors',
+              headers: {
+                'Access-Control-Allow-Origin':'*'
+              }}).then(data=>data.json())
+        .then(res => {
+            setCandidates(res)
+        })
+    },[])
 
 
     return (
-        <div className="candidates">
+        <section className="candidates">
             <Search candidates={candidates} setCandidates={setCandidates}/>
             <div className='container'>
                 {candidates.map(c => ( 
@@ -34,6 +36,6 @@ export const Candidates = () => {
                    />)
                     )}
             </div>
-        </div>
+        </section>
     )
 }

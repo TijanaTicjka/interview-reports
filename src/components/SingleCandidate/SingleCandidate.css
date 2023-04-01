@@ -1,8 +1,6 @@
 .container{
     display: grid;
     flex-wrap: wrap;
-    padding: 2em;
-    height: calc(100vh - 90px - 2em);
     margin-left: 5%;
     margin-right: 5%;
 

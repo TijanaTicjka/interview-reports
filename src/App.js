@@ -2,7 +2,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router';
 import { Layout } from './components/Layout/Layout';
-import { CandidateReports } from './components/CandidatePage/CandidatePage';
+import { SingleCandidate } from './components/SingleCandidate/SingleCandidate';
 import { Candidates } from './components/Candidates/Candidates.js';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path={'/'} element={<Layout />} >
         <Route path={'/candidates'} element={<Candidates/>}/>
-        <Route path={'/candidates/:id'} element={<CandidateReports/>} />
+        <Route path={'/candidates/:id'} element={<SingleCandidate/>} />
       </Route>
     </Routes>
   );

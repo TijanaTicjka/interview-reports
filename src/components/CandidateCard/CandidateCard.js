@@ -1,5 +1,3 @@
-
-
 import './CandidateCard.css';
 import { useNavigate } from 'react-router';
 
@@ -12,4 +10,4 @@ export const CandidateCard = ({ id, avatar, name, email}) => {
         <div className='email'><p>{email}</p></div>
       </div>
     );
-  }
+}
