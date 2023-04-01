@@ -1,17 +1,13 @@
-import './CandidatePage.css';
+import './SingleCandidate.css';
 import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { InfoSection } from '../InfoSection/InfoSection';
 import { InterviewTable } from '../InterviewTable/InterviewTable';
 
-export const CandidateReports = () => {
+export const SingleCandidate = () => {
     const { id } = useParams();
-    // const id = 56479186;
     const [candidate, setCandidate] = useState(null);
-    // const [interviews, setInterviews] = useState([]);
     const [reports, setReports] = useState([]);
-    // const [report, setReport] = useState(null);
-
 
     useEffect(() => {
         fetch(`http://localhost:3333/api/candidates/${id}`)
@@ -33,9 +29,7 @@ export const CandidateReports = () => {
     return (
         <div className='container'>
             <InfoSection candidate={candidate}/>
-           
             <h1>Reports</h1>
-
             <InterviewTable reports={reports} />
         </div>
     )  
