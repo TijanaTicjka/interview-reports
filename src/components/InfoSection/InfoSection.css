@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
 
 .image img {
@@ -26,7 +27,6 @@
 }
 
 .circlar-frame {
-    /* border-radius: 50%; */
     border-radius: calc(infinity*1px);
     border: 8px solid rgb(222, 202, 151);
     background-color: white;
@@ -44,10 +44,7 @@
 }
 
 .info {
-    /*flex-grow: 1;*/
     width: 31.5%;
-    /* flex-basis: 45%;
-    margin: 10px; */
 }
 
 h2 {
@@ -55,8 +52,6 @@ h2 {
     font-size: 28px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    /* overflow: hidden;
-    text-overflow:ellipsis; */
 } 
 
 .title-p {
@@ -100,6 +95,13 @@ h2 {
     }
     .image {
         flex-grow: 1;  
+    }
+    .info p {
+        margin-left: 15px;
+    }
+    
+    .info h2 {
+        margin-left: 45px;
     }
 }
 

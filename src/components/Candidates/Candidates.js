@@ -25,7 +25,7 @@ export const Candidates = () => {
     return (
         <section className="candidates">
             <Search candidates={candidates} setCandidates={setCandidates}/>
-            <div className='container'>
+            <div className='container-candidates'>
                 {candidates.map(c => ( 
                    <CandidateCard 
                    key={c.id}

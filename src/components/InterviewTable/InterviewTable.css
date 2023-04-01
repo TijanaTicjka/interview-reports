@@ -18,11 +18,11 @@
 }
 
 .row-first{
-  background-color: rgb(150, 149, 149);
+  background-color: rgb(51, 48, 49, 0.3);
 }
 
 .odd-row{
-  background-color: lightgray;
+  background-color:rgb(51, 48, 49, 0.1);
 }
 
 /* @media (min-width: 1024px) {

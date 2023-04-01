@@ -6,12 +6,14 @@
         url("//images01.nicepage.com/bd/ad/bdadf307ce501efc148a9101f2bbf588.jpeg") no-repeat center center fixed;
     background-size: cover;
     flex-wrap: wrap;
+    min-height: 100vh;
+
 }
 
-.container {
+.container-candidates {
+    padding: 3em 0;
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
-    _margin-top: 2em;
 }
