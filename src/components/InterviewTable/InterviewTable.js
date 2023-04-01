@@ -32,29 +32,28 @@ export const InterviewTable = ({ reports }) => {
    // // [params.id]);
 
 return (
-    <div className='table-container'>
+    <div className='gradient-border-table'>
         <table className='interview-table'>
             <thead className='row-first'>
                 <tr>
-                    <th>
+                    <th className='column-first'>
                     <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Company
                     </th>
-                    <th>
+                    <th className='column-second'>
                         <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} />Interview date
                     </th>
-                    <th>
+                    <th colSpan='2' className='column-third'>
                         <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Status
                     </th>
-                    <th></th>
                 </tr>
             </thead>
-            <tbody className='row-second'>
+            <tbody>
                 {reports.map(report => (
                     <tr key={report.candidateId}>
                         <td>{report.companyName}</td>
                         <td>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}</td>
                         <td>{report.status}</td>
-                        <td><FontAwesomeIcon icon={faEye} size="lg" /></td>
+                        <td style={{ width: '5%', textAlign: 'center'}}><FontAwesomeIcon icon={faEye} size="lg" /></td>
                     </tr>
                 ))}
             </tbody>

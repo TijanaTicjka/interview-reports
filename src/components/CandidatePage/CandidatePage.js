@@ -34,11 +34,10 @@ export const CandidateReports = () => {
         <div className='container'>
             <InfoSection candidate={candidate}/>
            
-            <h2>Reports</h2>
+            <h1>Reports</h1>
 
             <InterviewTable reports={reports} />
             
-
 
 
 
