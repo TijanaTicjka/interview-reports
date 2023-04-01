@@ -1,27 +1,23 @@
 
 
-import { Search } from './Search/Search';
+import {Search} from '../Search/Search'
 import './Candidates.css';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { CandidateCard } from './CandidateCard/CandidateCard';
+import { useEffect, useState } from 'react';
+import { CandidateCard } from '../CandidateCard/CandidateCard';
 
 
 export const Candidates = () => {
     const [candidates, setCandidates]= useState([]);
-    
+   
 
-    useEffect(()=> {
-        fetch('http://localhost:3333/api/candidates',{
-              mode: 'cors',
-              headers: {
-                'Access-Control-Allow-Origin':'*'
-              }})
-              .then(data => data.json())
-              .then(res => {
-            setCandidates(res)
-        })
-    },[])
+    useEffect(() => {
+        fetch('http://localhost:3333/api/candidates')
+        .then(data => data.json())
+        .then(res => 
+            console.log(res))
+        
+    },[]
+    )
 
 
     return (
