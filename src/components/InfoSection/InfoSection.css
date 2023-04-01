@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
+    _height: 40%;
 }
 
 .image img {

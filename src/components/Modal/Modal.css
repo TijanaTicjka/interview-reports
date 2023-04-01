@@ -10,6 +10,7 @@
     justify-content: center;
     box-shadow: 5px 5px 25px rgba(18, 17, 17, 0.8);
     flex-wrap: wrap;
+    border-radius: 0.1em;
 }
 
 .modal-box {

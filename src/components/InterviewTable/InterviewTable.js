@@ -16,6 +16,8 @@ export const InterviewTable = ({ reports }) => {
         setModal(true)
     }
     return (
+        <div className='table-box'>
+            <h1 className='heading'>Reports</h1>
         <div className='gradient-border-table'>
             <Modal modal={modal} setModal={setModal} report= {report}/>
             <table className='interview-table'>
@@ -43,6 +45,7 @@ export const InterviewTable = ({ reports }) => {
                 ))}
             </tbody>
         </table>        
+    </div>
     </div>
     )
 }

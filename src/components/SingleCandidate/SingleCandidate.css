@@ -19,12 +19,6 @@ td{
     padding: 0.5em;
 }
 
-.heading{
-    font-weight: 500;
-    color: rgba(240, 236, 237, 0.952);
-    font-size: 1.5em;
-    padding: 1em 0;
-    height: 10px;
-    width: 100px;
-
+.table-box{
+    width: 100%;
 }

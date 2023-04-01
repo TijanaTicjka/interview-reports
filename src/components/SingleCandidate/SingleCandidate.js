@@ -29,7 +29,6 @@ export const SingleCandidate = () => {
     return (
         <div className='container'>
             <InfoSection candidate={candidate}/>
-            <div className='heading'>Reports</div>
             <InterviewTable reports={reports} />
         </div>
     )  
