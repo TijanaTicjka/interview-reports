@@ -25,9 +25,7 @@
   background-color: lightgray;
 }
 
- 
-
- /* @media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   tbody {
     grid-template-columns: repeat(3, 1fr) repeat(2, 1fr) repeat(1, 1fr);
   }
