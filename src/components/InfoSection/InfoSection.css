@@ -21,6 +21,7 @@
     align-items: center;
     flex-shrink: 0;  
     height: auto;  
+    padding: 10px;
 }
 
 .circlar-frame {
@@ -30,9 +31,10 @@
     background-color: white;
     height: 300px;
     width: 300px;
-    padding: 20px;
+    padding: 5px;
     margin-bottom: 20px;
 }
+
 .circlar-frame img {
     max-width: 100%;
     height: auto;
@@ -76,11 +78,27 @@ h2 {
         flex-basis: 100%;
         margin-bottom: 1rem;
     }
+     .image {
+        flex-grow: 1;  
+    }
+    .info p{
+        margin-left: 15px;
+    }
+    .info h2 {
+        margin-left: 45px;
+    }
+    .circlar-frame {
+        margin-top: 20px;
+    }
 }
+
 
 @media (min-width: 769px) and (max-width: 1023px) {
     .info {
         flex-basis: 48%;
+    }
+    .image {
+        flex-grow: 1;  
     }
 }
 
