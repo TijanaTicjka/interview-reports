@@ -10,9 +10,10 @@
     height: 200px;
     width: 200px;
     padding: 50px 50px 50px;
-    filter: drop-shadow(2px 4px 8px #55534a); 
+    filter: drop-shadow(2px 4px 8px #494846); 
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 .image {
@@ -27,7 +28,7 @@
 .circlar-frame {
     /* border-radius: 50%; */
     border-radius: calc(infinity*1px);
-    border: solid 5px rgb(88, 88, 22);
+    border: 8px solid rgb(222, 202, 151);
     background-color: white;
     height: 300px;
     width: 300px;
@@ -38,7 +39,7 @@
 .circlar-frame img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(2px 4px 8px #55534a);
+    filter: drop-shadow(2px 4px 8px #deca97);
     margin-right: auto;
 }
 
@@ -68,7 +69,7 @@ h2 {
 }
 
 .gradient-border-info {
-    background-image: linear-gradient(rgb(245, 247, 148), white);
+    background-image: linear-gradient(rgb(222, 202, 151), white);
     background-origin: border-box ;
     background-clip: content-box, border-box;
 }
