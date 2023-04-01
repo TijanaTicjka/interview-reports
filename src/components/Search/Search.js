@@ -7,7 +7,7 @@ export const Search = ({candidates, setCandidates}) => {
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredUsers = candidates.filter(candidate => candidate.name.first.toLowerCase().includes(searchTerm.toLowerCase()));
+  // const filteredUsers = candidates.filter(candidate => candidate.name.first.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
     <div className="search-box">
