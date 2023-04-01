@@ -1,33 +1,59 @@
+.info-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .image img {
     height: 200px;
     width: 200px;
     padding: 50px 50px 50px;
     filter: drop-shadow(2px 4px 8px #55534a); 
+    max-width: 100%;
+    height: auto;
 }
 
 .image {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-shrink: 0;  
+    height: auto;  
 }
 
 .circlar-frame {
-      /* padding: 0 50px 50px; 
-    margin-left:20px;
-    margin-right:20px; */
-    border-radius: 50%;
-    border: solid 5px  rgb(167, 162, 162);
+    /* border-radius: 50%; */
+    border-radius: calc(infinity*1px);
+    border: solid 5px rgb(88, 88, 22);
     background-color: white;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.circlar-frame img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 4px 8px #55534a);
+    margin-right: auto;
+}
+
+.info {
+    /*flex-grow: 1;*/
+    width: 31.5%;
+    /* flex-basis: 45%;
+    margin: 10px; */
 }
 
 h2 {
     padding-bottom: 50px;
-    font-size: 32px;
+    font-size: 28px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    /* overflow:hidden;
-    text-overflow:ellipsis;*/
+    /* overflow: hidden;
+    text-overflow:ellipsis; */
 } 
 
 .title-p {
@@ -35,11 +61,32 @@ h2 {
     color: rgb(102, 100, 100);
 }
 
-.gradient-border {
-    border: solid 4px transparent;
-    border-radius: 5px;
-    background-image: linear-gradient(rgb(245, 247, 148), white),
-    linear-gradient(315deg,#f3d295,#777676 50%, black );
+.info p{
+    color: gray;
+}
+
+.gradient-border-info {
+    background-image: linear-gradient(rgb(245, 247, 148), white);
     background-origin: border-box ;
     background-clip: content-box, border-box;
-   }
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .info {
+        flex-basis: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info {
+        flex-basis: 25%;
+    }
+}
+

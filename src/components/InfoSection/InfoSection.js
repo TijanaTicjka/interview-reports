@@ -16,7 +16,7 @@ export const InfoSection = ({ candidate }) => {
     
     const formattedBirthday = new Date(candidate.birthday).toLocaleDateString('ru-RU') + ".";
     return (
-        <div className='info-box gradient-border'>
+        <div className='info-box gradient-border-info'>
             <div className='image'>
                 <div className='circlar-frame'>
                     <img src={candidate.avatar}></img>
