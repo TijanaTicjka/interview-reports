@@ -3,12 +3,7 @@
     color: gray;
     text-align: center;
     background-color:rgb(51, 51, 51);
-    _position: fixed;
-    _position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
-
-/* :target {
-    scroll-margin-bottom: 3em;
-} */
