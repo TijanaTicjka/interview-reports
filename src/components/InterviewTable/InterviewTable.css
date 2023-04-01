@@ -1,5 +1,5 @@
 .interview-table {
-    border: 1px solid black;
+    border: 1px solid rgb(100, 100, 100);
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
@@ -15,32 +15,39 @@
   background-clip: content-box, border-box;
   height: 100%;
   width: 100%;
- }
-
-
- @media (max-width: 768px) {
-  tbody {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr) repeat(1, 1fr);
-  }
 }
 
-@media (max-width: 480px) {
+.row-first{
+  background-color: rgb(150, 149, 149);
+}
+
+.odd-row{
+  background-color: lightgray;
+}
+
+/* @media (min-width: 1024px) {
   tbody {
+    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr) repeat(1, 1fr);
+  }
+} */
+/* 
+@media (min-width: 768px) {
+  td {
     display: grid;
     grid-template-columns: repeat(3, 1fr) repeat(1, 1fr);
   }
-}
-
-@media (max-width: 320px) {
+} */
+/*
+@media (max-width: 767x) {
   tbody {
     display: grid;
     grid-template-columns: repeat(2, 1fr) repeat(1, 1fr);
   }
-}
+} */
 
 th {
     padding: 0.5em;
+    text-align: left;
  }
 
 .column-first {
@@ -57,5 +64,7 @@ th {
 
 .column-third {
     width: 28%;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 

@@ -14,7 +14,7 @@ export const InterviewTable = ({ reports }) => {
                     <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Company
                     </th>
                     <th className='column-second'>
-                        <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} />Interview date
+                        <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Interview date
                     </th>
                     <th colSpan='2' className='column-third'>
                         <FontAwesomeIcon icon={faCaretDown} size="1x" style={{ color: 'black' }} /> Status
@@ -22,8 +22,8 @@ export const InterviewTable = ({ reports }) => {
                 </tr>
             </thead>
             <tbody>
-                {reports.map(report => (
-                    <tr key={report.candidateId}>
+                {reports.map((report, index) => (
+                    <tr className={index % 2 === 0 ? "even-row" : "odd-row"} key={report.candidateId}>
                         <td>{report.companyName}</td>
                         <td>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}.</td>
                         <td>{report.status}</td>
