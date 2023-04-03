@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { Modal } from '../Modal/Modal';
 
 
 export const Reports = () => {
@@ -24,9 +25,9 @@ export const Reports = () => {
 
     },[])
 
-
     return (
         <section className='reports'>
+            <Modal />
             <div className='reports-container'>
                 {allReports.map(report => (
                 <div key={report.id} className='report-box'>
