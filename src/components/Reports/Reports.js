@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Modal } from '../Modal/Modal';
+import {Search} from './Search/Search'
 
 
 export const Reports = () => {
     const[allReports, setAllReports] = useState([]);
     console.log(allReports);
     const[modal, setModal] = useState(false);
-    const[report, setReport] =useState(null);  
+    const[report, setReport] = useState(null); 
+    const[searchTerm, setSearchTerm] = useState('')
 
     const openModal = (report) => {
         setModal(true);
@@ -25,14 +27,23 @@ export const Reports = () => {
 
     },[])
 
+    const filltredReports = useMemo(()=>{
+        if(!searchTerm) {
+            return allReports} else {
+        return allReports.filter(report =>
+            (report.candidateName.toLowerCase().includes(searchTerm.toLowerCase()))|| report.companyName.toLowerCase().includes(searchTerm.toLowerCase())
+        )}
+    },[searchTerm,allReports])
+
     return (
         <section className='reports'>
             <Modal 
             modal={modal}
             setModal={setModal}
             report={report}/>
+            <Search setSearchTerm={setSearchTerm}/>
             <div className='reports-container'>
-                {allReports.map(report => (
+                {filltredReports.map(report => (
                 <div key={report.id} className='report-box'>
                     <div className='box1'>
                       <h3>{report.companyName}</h3>

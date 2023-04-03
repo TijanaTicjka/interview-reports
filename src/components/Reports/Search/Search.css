@@ -1,0 +1,30 @@
+.search-box {
+    width: 94%;
+    display: flex;
+    color: rgb(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgb(255, 255, 255, 0.3);
+    height: 15%;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.input {
+    display: flex;
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+.input input {
+    background-color: rgb(255, 255, 255);
+    outline-color: rgb(255, 255, 255, 1);
+    outline-offset: 0.1em;
+    color: gray;
+}
+
+.input .icon {
+    color: rgb(209, 211, 214);
+    z-index: 1;
+    position: relative;
+    margin-top: 8px;
+    margin-right: -25px;
+}
