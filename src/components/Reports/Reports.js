@@ -8,6 +8,13 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 export const Reports = () => {
     const[allReports, setAllReports] = useState([]);
     console.log(allReports);
+    const[modal, setModal] = useState(false);
+    const[report, setReport] =useState(null);  
+
+    const openModal = (report) => {
+        setModal(true);
+        setReport(report);
+    }
    
     useEffect(() => {
         fetch('http://localhost:3333/api/reports')
@@ -40,7 +47,11 @@ export const Reports = () => {
                         <p>Status</p>
                     </div>
                     <div className='box3'>
-                        <FontAwesomeIcon icon={faEye} size="lg"/>
+                        <FontAwesomeIcon icon={faEye} size="lg"
+                        modal={modal}
+                        setModal={setModal}
+                        report={report}
+                        onClick={()=> openModal(report)} />
                         <FontAwesomeIcon
                         icon={faTrashAlt}
                         size="lg"
