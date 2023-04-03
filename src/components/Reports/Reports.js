@@ -18,6 +18,20 @@ export const Reports = () => {
         setModal(true);
         setReport(report);
     }
+
+
+    const deleteReport = (id) => {
+        fetch(`http://localhost:3333/api/reports/${id}`, {
+            method: 'DELETE',})
+            .then((res) => {
+                if (res.status !== 200) {
+                console.log('Error');
+                return;
+            }
+            const newReports = allReports.filter((report) => report.id !== id);setAllReports(newReports);
+            navigate('/reports')
+        });
+    };
    
     useEffect(() => {
         fetch('http://localhost:3333/api/reports')
@@ -67,7 +81,7 @@ export const Reports = () => {
                         <FontAwesomeIcon
                         icon={faTrashAlt}
                         size="lg"
-                        style={{ color: 'black'}} /> 
+                        style={{ color: 'black'}} onClick={()=> deleteReport(report.id)} /> 
                     </div>
                 </div>
             ))}
