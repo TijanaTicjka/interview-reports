@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4em;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url("//images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f2c376d77b44586bac314967/pexels-photo-6619243.jpeg?version=") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;   
+} 
+
+td{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.table-box{
+    width: 100%;
+}

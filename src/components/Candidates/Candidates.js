@@ -25,7 +25,7 @@ export const Candidates = () => {
     return (
         <section className="candidates">
             <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <div className='container'>
+            <div className='container-candidates'>
                 {(filteredCandidates.length > 0) ? 
                     (
                         filteredCandidates.map(c => ( 

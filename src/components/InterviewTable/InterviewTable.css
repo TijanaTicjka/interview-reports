@@ -1,0 +1,77 @@
+.interview-table {
+    border: 1px solid rgb(100, 100, 100);
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.gradient-border-table {
+  border: solid 4px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(rgb(255, 255, 255), white),
+  linear-gradient(315deg,#f3d295,#777676 50%, black );
+  background-origin: border-box ;
+  background-clip: content-box, border-box;
+  width: 100%;
+}
+
+.row-first{
+  background-color: rgb(51, 48, 49, 0.3);
+}
+
+.odd-row{
+  background-color:rgb(51, 48, 49, 0.1);
+}
+
+/* @media (min-width: 1024px) {
+  tbody {
+    grid-template-columns: repeat(3, 1fr) repeat(2, 1fr) repeat(1, 1fr);
+  }
+} */
+/* 
+@media (min-width: 768px) {
+  td {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(1, 1fr);
+  }
+} */
+/*
+@media (max-width: 767x) {
+  tbody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) repeat(1, 1fr);
+  }
+} */
+
+th {
+    padding: 0.5em;
+    text-align: left;
+ }
+
+.column-first {
+    width: 30%;
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+
+.column-second {
+    width: 42%;
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+
+.column-third {
+    width: 28%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.heading {
+  font-weight: 500;
+  color: rgba(240, 236, 237, 0.952);
+  font-size: 1.5em;
+  padding: 1em 0;
+  _height: 10px;
+  width: 100px;
+
+}
+
