@@ -11,7 +11,7 @@ export const Modal = ({modal, setModal, report}) => {
         <div className='modal-box'>
           <div className='report'>
             <div className='headline'>
-              <h2>{report.candidateName}</h2>
+              <h3>{report.candidateName}</h3>
               <button className='close' onClick={() => setModal(false)}>
                 <FontAwesomeIcon icon={faCircleXmark}  className='icon-close'size="2xl" /> 
               </button>
@@ -29,7 +29,7 @@ export const Modal = ({modal, setModal, report}) => {
               </div>
               <div className='notes'>
                 <p>Notes</p>
-                <span>{report.note}</span>
+                <p>{report.note}</p>
               </div>
             </div>
           </div>
