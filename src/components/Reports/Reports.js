@@ -27,7 +27,10 @@ export const Reports = () => {
 
     return (
         <section className='reports'>
-            <Modal />
+            <Modal 
+            modal={modal}
+            setModal={setModal}
+            report={report}/>
             <div className='reports-container'>
                 {allReports.map(report => (
                 <div key={report.id} className='report-box'>
@@ -49,9 +52,6 @@ export const Reports = () => {
                     </div>
                     <div className='box3'>
                         <FontAwesomeIcon icon={faEye} size="lg"
-                        modal={modal}
-                        setModal={setModal}
-                        report={report}
                         onClick={()=> openModal(report)} />
                         <FontAwesomeIcon
                         icon={faTrashAlt}
