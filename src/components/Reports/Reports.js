@@ -18,7 +18,6 @@ export const Reports = () => {
 
     },[])
 
-
     return (
         <section className='reports'>
             <Modal />
