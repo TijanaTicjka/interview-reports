@@ -29,7 +29,6 @@ export const Reports = () => {
                 return;
             }
             const newReports = allReports.filter((report) => report.id !== id);setAllReports(newReports);
-            navigate('/reports')
         });
     };
    
