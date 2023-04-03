@@ -4,9 +4,10 @@
     justify-content: space-between;
     color: rgb(255, 255, 255, 0.9);
     border-bottom: 2px solid rgb(255, 255, 255, 0.3);
-    height: 15%;
-    padding-top: 1em;
+    _height: 25%;
+    padding-top: 2em;
     align-items: center;
+    padding-bottom: 1em;
 }
 
 .input {

@@ -8,7 +8,10 @@ export const Header = () => {
             <div>
                 <h1> Interview Reports </h1>
             </div>
-                <button className='button'  onClick={() => navigate('/candidates')}> Candidates </button>
+                <div className='button-box'>
+                    <button className='button' onClick={()=> navigate('/')}> Candidates </button>
+                    <button className='button' onClick={()=> navigate('/reports')}> Reports </button>
+            </div>
         </header>
     )
 }
