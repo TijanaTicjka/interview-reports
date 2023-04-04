@@ -6,8 +6,7 @@
         url("//images01.nicepage.com/bd/ad/bdadf307ce501efc148a9101f2bbf588.jpeg") no-repeat center center fixed;
     background-size: cover;
     flex-wrap: wrap;
-    min-height: 100vh;
-
+    min-height: calc(100vh - 5em - 5em);
 }
 
 .container-candidates {

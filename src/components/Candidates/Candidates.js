@@ -1,5 +1,3 @@
-
-
 import {Search} from '../Search/Search'
 import './Candidates.css';
 import { useEffect, useState } from 'react';
