@@ -24,17 +24,25 @@ export const Candidates = () => {
 
     return (
         <section className="candidates">
-            <Search candidates={candidates} setCandidates={setCandidates}/>
-            <div className='container-candidates'>
-                {candidates.map(c => ( 
-                   <CandidateCard 
-                   key={c.id}
-                   id={c.id}
-                   avatar = {c.avatar}
-                   name = {c.name}
-                   email = {c.email}
-                   />)
-                    )}
+            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+            <div className='container'>
+                {(filteredCandidates.length > 0) ? 
+                    (
+                        filteredCandidates.map(c => ( 
+                        <CandidateCard 
+                        key={c.id}
+                        id={c.id}
+                        avatar = {c.avatar}
+                        name = {c.name}
+                        email = {c.email}
+                        />))
+                    ) : 
+                    (
+                    <div className='card'>
+                        <div className='border'><h3>No candidates found!</h3></div>
+                    </div>
+                    )
+                }
             </div>
         </section>
     )
