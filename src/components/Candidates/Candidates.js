@@ -8,8 +8,10 @@ import { CandidateCard } from '../CandidateCard/CandidateCard';
 
 export const Candidates = () => {
     const [candidates, setCandidates]= useState([]);
-   
 
+    const [searchTerm, setSearchTerm] = useState("");
+    const filteredCandidates = candidates.filter(candidate => candidate.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    
      useEffect(()=> {
         fetch('http://localhost:3333/api/candidates',{
               mode: 'cors',
@@ -25,7 +27,7 @@ export const Candidates = () => {
     return (
         <section className="candidates">
             <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <div className='container'>
+            <div className='container-candidates'>
                 {(filteredCandidates.length > 0) ? 
                     (
                         filteredCandidates.map(c => ( 

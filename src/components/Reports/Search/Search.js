@@ -17,7 +17,7 @@ export const Search = ({setSearchTerm}) => {
       <div className="search-box">
         <div className="input">
            <FontAwesomeIcon icon={faSearch} className="icon" />
-           <input value={search} onChange={handleSearch}  placeholder="Search..."/>
+           <input id="reports" type="search" value={search} onChange={handleSearch}  placeholder="Search..."/>
        </div>
       </div>
     );
