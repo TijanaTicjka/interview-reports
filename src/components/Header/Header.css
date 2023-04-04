@@ -1,7 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 0em 2em;
+    height: 5em;
     display: flex;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(225, 224, 225, 0.5));
     align-items: center;
