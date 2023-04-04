@@ -1,16 +1,16 @@
+
+
 import {Search} from '../Search/Search'
 import './Candidates.css';
 import { useEffect, useState } from 'react';
 import { CandidateCard } from '../CandidateCard/CandidateCard';
 
+
 export const Candidates = () => {
-
     const [candidates, setCandidates]= useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
+   
 
-    const filteredCandidates = candidates.filter(candidate => candidate.name.toLowerCase().includes(searchTerm.toLowerCase()));
-
-    useEffect(()=> {
+     useEffect(()=> {
         fetch('http://localhost:3333/api/candidates',{
               mode: 'cors',
               headers: {
@@ -25,7 +25,7 @@ export const Candidates = () => {
     return (
         <section className="candidates">
             <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <div className='container-candidates'>
+            <div className='container'>
                 {(filteredCandidates.length > 0) ? 
                     (
                         filteredCandidates.map(c => ( 

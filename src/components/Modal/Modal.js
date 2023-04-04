@@ -11,25 +11,25 @@ export const Modal = ({modal, setModal, report}) => {
         <div className='modal-box'>
           <div className='report'>
             <div className='headline'>
-              <p>{report.candidateName}</p>
+              <h2>{report.candidateName}</h2>
               <button className='close' onClick={() => setModal(false)}>
                 <FontAwesomeIcon icon={faCircleXmark}  className='icon-close'size="2xl" /> 
               </button>
             </div>
             <div className='details'>
               <div className='first-part'>
-                <div className='title'>Company</div>
-                <div className='dates'> {report.companyName}</div>
-                <div className='title'>Interview Date</div>
-                <div className='dates'>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}.</div> 
-                <div className='title'>Phase</div>
-                <div className='dates'>{report.phase}</div>
-                <div className='title'>Status</div>
-                <div className='dates'>{report.status}</div>
+                <p className='title'>Company</p>
+                <h3 className='dates'> {report.companyName}</h3>
+                <p className='title'>Interview Date</p>
+                <h3 className='dates'>{new Date(report.interviewDate).toLocaleDateString('ru-RU')}.</h3> 
+                <p className='title'>Phase</p>
+                <h3 className='dates'>{report.phase}</h3>
+                <p className='title'>Status</p>
+                <h3 className='dates'>{report.status}</h3>
               </div>
               <div className='notes'>
-                <div className='title'>Notes</div>
-                <p>{report.note}</p>
+                <p>Notes</p>
+                <span>{report.note}</span>
               </div>
             </div>
           </div>
