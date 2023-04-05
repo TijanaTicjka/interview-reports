@@ -1,20 +1,19 @@
 .info-box {
     display: flex;
     width: 100%;
+    height: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    _height: 40%;
 }
 
 .image img {
     height: 150px;
     width: 150px;
-    padding: 20px 20px 20px;
+    padding: 20px 20px;
     filter: drop-shadow(2px 4px 8px #494846); 
     max-width: 100%;
-    height: auto;
     border-radius: 50%;
 }
 
@@ -35,6 +34,9 @@
     width: 200px;
     padding: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circlar-frame img {
@@ -48,15 +50,16 @@
     width: 31.5%;
 }
 
-h2 {
-    padding-bottom: 50px;
+h1.candidates-info, h1.candidates-email {
+    padding: 0px 0px 50px 30px;
     font-size: 28px;
+    font-weight: 500;
     word-wrap: break-word;
     overflow-wrap: break-word;
 } 
 
 .title-p {
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(102, 100, 100);
 }
 
@@ -65,9 +68,51 @@ h2 {
 }
 
 .gradient-border-info {
-    background-image: linear-gradient(rgb(222, 202, 151), white);
+    background-image: linear-gradient(rgb(222, 202, 151), white),
+    linear-gradient(315deg,#f3d295,#777676 50%, rgb(222, 202, 151));
     background-origin: border-box ;
     background-clip: content-box, border-box;
+    border: solid 5px transparent;
+}
+
+@media (max-width: 490px) {
+    .image img {
+        height: 80px;
+        width: 80px;
+        margin-right: 0;
+    }
+    .circlar-frame {
+        height: 120px;
+        width: 120px;   
+    }
+    h1.candidates-email  {
+        font-size: 10px;
+    }
+    .info-box.gradient-border-info{
+        overflow-x: scroll;
+    }
+    ::-webkit-scrollbar {
+        height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #635858;  
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #070707;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .image img {
+        height: 130px;
+        width: 130px;
+        margin-right: 0;
+    }
+    .circlar-frame {
+        height: 180px;
+        width: 180px;     
+    }
 }
 
 @media (max-width: 768px) {
@@ -75,20 +120,28 @@ h2 {
         flex-basis: 100%;
         margin-bottom: 1rem;
     }
-     .image {
+    .image {
         flex-grow: 1;  
     }
     .info p{
         margin-left: 15px;
     }
-    .info h2 {
-        margin-left: 45px;
+    .info h1 {
+        margin-left: 10px;
+    }
+    h1.candidates-info {
+        font-size: 22px;
+    }
+    h1.candidates-email {
+        font-size: 22px;
+    }
+    p.title-p {
+        font-size: 18px;
     }
     .circlar-frame {
         margin-top: 20px;
     }
 }
-
 
 @media (min-width: 769px) and (max-width: 1023px) {
     .info {
@@ -100,9 +153,14 @@ h2 {
     .info p {
         margin-left: 15px;
     }
-    
-    .info h2 {
-        margin-left: 45px;
+    .info h1 {
+        margin-left: 10px;
+    }
+    h1.candidates-info {
+        font-size: 24px;
+    }
+    h1.candidates-email {
+        font-size: 22px;   
     }
 }
 
@@ -112,3 +170,8 @@ h2 {
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1320px) {
+    h1.candidates-email {
+        font-size: 24px;
+    }
+}

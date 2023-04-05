@@ -14,15 +14,15 @@ export const InfoSection = ({ candidate }) => {
             </div>
             <div className='info'>
                 <p className='title-p'>Name:</p>
-                <h2>{candidate.name}</h2>
+                <h1 className='candidates-info'>{candidate.name}</h1>
                 <p className='title-p'>Email:</p>
-                <h2>{candidate.email}</h2>
+                <h1 className='candidates-email'>{candidate.email}</h1>
             </div>
             <div className='info'> 
                 <p className='title-p'>Date of birth:</p>
-                <h2>{formattedBirthday}</h2>
+                <h1 className='candidates-info'>{formattedBirthday}</h1>
                 <p className='title-p'>Education:</p>
-                <h2>{candidate.education}</h2>
+                <h1 className='candidates-info'>{candidate.education}</h1>
             </div> 
         </div>
     )
