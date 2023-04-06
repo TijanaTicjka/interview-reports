@@ -10,8 +10,8 @@ export const ReportsHeader = () => {
                 <h1 onClick={()=> navigate('/')}> Reports Administration </h1>
             </div>
             <div className='button-box'>
-                <button className='button'> Reports </button>
-                <button className='button'> Create Report </button>
+                <button className='button-reports'> Reports </button>
+                <button className='button-reports'> Create Report </button>
             </div>
         </header>
     )

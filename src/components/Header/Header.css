@@ -17,7 +17,7 @@
     border: 2px solid grey;
     cursor: pointer;
     font-weight: bold;
-    width: 10em;
+    width: 12em;
 }
     
 .button:hover {
@@ -32,4 +32,37 @@
     flex-wrap: wrap;
     gap: 1em;
     justify-content: flex-end;
+    align-items: center;
+}
+
+@media (min-width: 468px)and (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .button-box {
+        gap: 0.5em;
+    }
+
+    .button {
+        height: 2.4em;
+        padding: 0 1em;
+        width: 10em;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 467px) {
+    .header h1 {
+        font-size: 1.4em;
+    }
+
+    .button-box {
+        gap: 0.4em;
+    }
+
+    .button {
+        height: 2.2em;
+        padding: 0 1em;
+        width: 9em;
+    }
 }

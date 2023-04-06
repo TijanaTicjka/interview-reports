@@ -70,5 +70,64 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1em;
-   
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .report-box h3{
+        font-size: 1em;
+    }
+    .report-box p{
+        font-size: 1em;
+    }
+    .fa-lg {
+        font-size: 1.1em;
+    }
+
+}
+@media (min-width: 468px) and (max-width: 768px) {
+    .report-box{
+        height: 70px;
+        padding: 0 0.8em;
+    }
+    .report-box h3 {
+        font-size: 0.9em;
+    }
+
+    .report-box p {
+        font-size: 0.9em;
+    }
+
+    .fa-lg {
+        font-size: 1em;
+    }
+    .box1 {
+        width: 20%;
+    }
+    .box2{
+        width: 20%;
+    }
+
+}
+@media (min-width: 375px) and (max-width: 467px) {
+
+    .report-box{
+        padding: 0 0.6em;
+    }
+    .report-box h3 {
+        font-size: 0.7em;
+    }
+    
+    .report-box p {
+        font-size: 0.7em;
+    }
+    .box1 {
+        width: 20%;
+    }
+    
+    .box2 {
+         width: 20%;
+    }
+    .fa-lg {
+        font-size: 0.8em;
+    }
 }

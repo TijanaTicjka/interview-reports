@@ -8,7 +8,7 @@
     height: 5em;
 }
 
-.button {
+.button-reports {
     background-color: rgb(51, 48, 49, 0.5);
     padding: 0em 2.5em;
     height: 3em;
@@ -21,7 +21,7 @@
     width: 12em;
 }
 
-.button:hover {
+.button-reports:hover {
     background-color: white;
     color: grey;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -37,4 +37,35 @@
 
 .reports-header h1 {
     cursor: pointer;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .reports-header h1{
+        font-size: 1.7em;
+    }
+}
+@media (min-width: 468px)and (max-width: 768px) {
+    .reports-header h1 {
+        font-size: 1.5em;
+    }
+    .button-box{
+        gap:0.5em;
+    }
+    .button-reports{
+        height: 2.4em;
+        padding: 0 1em;
+        width: 10em;
+    }
+}
+@media (min-width: 375px) and (max-width: 467px) {
+    .reports-header h1{
+        font-size: 1.2em;
+    }
+    .button-box {
+        gap: 0.4em;
+    }
+    .button-reports {
+        height: 2.2em;
+        padding: 0 1em;
+        width: 9em;
+    }
 }
