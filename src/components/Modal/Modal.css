@@ -120,5 +120,6 @@
     .notes{
         flex-basis: 100%;
         padding-bottom: 1em;
+        white-space:normal;
     }
 }
