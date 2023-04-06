@@ -2,7 +2,7 @@
     display: block;
     position: fixed;
     z-index: 1;
-    width: 50%;
+    width: 60%;
     height: fit-content;
     overflow: auto;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(225, 224, 225, 1));
@@ -46,7 +46,6 @@
 }
 
 .icon-close {
-    _color: rgb(51, 48, 49, 0.5);
     size: '2xl';
     color: rgb(222, 202, 151, 0.9);
     border: 2px solid rgb(222, 202, 151, 0.9);
@@ -91,4 +90,35 @@
     font-size: 1.5em;
     margin-bottom: 0.5em;
     padding: 0.1em 0;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+    .report{
+        width: 70%;
+    }
+
+    .headline h2{
+        font-size: 1.2em;
+    }
+
+    .details {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .details p{
+        font-size: 0.8em;
+    }
+
+    .details h3{
+        font-size: 1em;
+    }
+
+    .first-part{
+        flex-basis: 100%;
+    }
+
+    .notes{
+        flex-basis: 100%;
+        padding-bottom: 1em;
+    }
 }
