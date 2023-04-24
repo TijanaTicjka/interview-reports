@@ -9,7 +9,7 @@ export const InfoSection = ({ candidate }) => {
         <div className='info-box gradient-border-info'>
             <div className='image'>
                 <div className='circlar-frame'>
-                    <img src={candidate.avatar}></img>
+                    <img src={candidate.avatar} alt={candidate.avatar}></img>
                 </div>
             </div>
             <div className='info'>

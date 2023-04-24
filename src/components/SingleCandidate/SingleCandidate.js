@@ -13,7 +13,7 @@ export const SingleCandidate = () => {
         fetch(`http://localhost:3333/api/candidates/${id}`)
             .then(data => data.json())
             .then(result => setCandidate(result))
-    }, []);
+    }, [id]);
      
     useEffect(() => {
         fetch(`http://localhost:3333/api/reports?candidateId=${id}`)
