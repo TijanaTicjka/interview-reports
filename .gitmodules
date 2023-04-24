@@ -1,0 +1,2 @@
+[submodule "src/interviews-reports-api-mock"]
+	url = https://github.com/nenadbugaric/interviews-reports-api-mock.git
