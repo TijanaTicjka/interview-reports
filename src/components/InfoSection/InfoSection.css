@@ -27,7 +27,7 @@
 }
 
 .circlar-frame {
-    border-radius: calc(infinity*1px);
+    border-radius: 1000px;
     border: 8px solid rgb(222, 202, 151);
     background-color: white;
     height: 200px;
