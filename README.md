@@ -1,3 +1,49 @@
+# Interview Reports
+
+![Screenshot of a candidates page](candidates.png)
+![Screenshot of a reports page](reports.png)
+![Screenshot of a modal opened on report page](detailedReport.png)
+![Screenshot of a single candidate page](singleCandidate.png)!
+![Screenshot of a modal opened on single candidate page](singleCandidateReport.png)
+
+## Description
+
+Interview Reports is a web application for viewing and managing candidate reports. The application was built as the final project in BIT (Belgrade Institute of Technology) by four people in the class. Each person worked on separate branches to develop different features.
+The application was built using React, and the project setup was created using create-react-app.
+
+## Features
+
+- View all candidates and their information
+- Navigate to a single candidate report page to view reports for that candidate
+- Open a modal with detailed report information
+- Search candidates by name
+- Access the Administrative Panel Application with a Report List an Open a modal with detailed report information
+- Delete reports
+
+## Technologies Used
+- React
+- React Router
+- CSS
+- Interviews-Reports API (for candidate information)
+
+# Setting up the Interviews-Reports API
+
+- Clone the Interviews-Reports API repository:
+
+git clone https://github.com/nenadbugaric/interviews-reports-api-mock/
+
+- Switch to the auth-client branch:
+
+git checkout auth-client
+
+- Install the necessary dependencies:
+
+npm install
+
+- Start the API server:
+
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -11,23 +11,14 @@ export const Candidates = () => {
     const filteredCandidates = candidates.filter(candidate => candidate.name.toLowerCase().includes(searchTerm.toLowerCase()));
     
      useEffect(()=> {
-        fetch('../../interviews-reports-api-mock/api/candidates', {
-  credentials: 'include'
-})
-.then(data => data.json())
-.then(res => {
-  setCandidates(res)
-})
-
-
-        // fetch('http://localhost:3333/api/candidates',{
-        //       mode: 'cors',
-        //       headers: {
-        //         'Access-Control-Allow-Origin':'*'
-        //       }}).then(data=>data.json())
-        // .then(res => {
-        //     setCandidates(res)
-        // })
+        fetch('http://localhost:3333/api/candidates',{
+              mode: 'cors',
+              headers: {
+                'Access-Control-Allow-Origin':'*'
+              }}).then(data=>data.json())
+        .then(res => {
+            setCandidates(res)
+        })
     },[])
 
 
